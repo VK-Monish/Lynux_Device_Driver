@@ -17,7 +17,6 @@ static int __init my_timer_set(void)
 	timer_setup(&my_timer,timer_callback,0);
 
 	mod_timer(&my_timer, jiffies + 3 * HZ);
-
 	return 0;
 }
 
